@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Payment Checkout Form</title>
+        <link rel="stylesheet" href="payment.css">
+        <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="payment">
+                <h2>Payment Gateway</h2>
+                <div class="form">
+                    <div class="card space icon-relative">
+                    <div class="card">
+                        <label class="label">Card holder:</label>
+                        <input type="text" class="input" name="card_holder" placeholder="Card Holder Name">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="card space icon-relative">
+                        <div class="card-item">
+                            <label class="label">Card Number:</label>
+                            <input type="text" class="input" name="card_number" placeholder="Card  Number">
+                        </div>
+                        <div class="card-grp space">
+                            <div class="card-item icon-relative">
+                                <label class="label">Expiry Date:</label>
+                                <input type="text" class="input" name="expiry_date" placeholder="00 / 00">
+                                <i class="fas fa-calendar-week"></i>
+
+                            </div>
+                            <div class="card-item icon-relative">
+                                <label class="label">CVC:</label>
+                                <input type="text" class="input" name="cvc" placeholder="00 / 00">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            Pay
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
