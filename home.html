@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Online Fuel Delivery">
+  <title>FuelFast - Online Fuel Delivery Service</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="images/logo.png" alt="FuelFast Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <!-- Update the Services link to point to servicepage.html -->
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          
+      
+      </ul>
+    </nav>
+    <div class="login-signup">
+      <button onclick="document.getElementById('loginModal').style.display='block'">Login</button>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>Get Fuel Delivered to Your Doorstep</h1>
+      <p>Fast, Reliable, and Convenient Fuel Delivery Service</p>
+      <button onclick="window.location.href='#services'">Get Started</button>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="service-header">
+      <h1>Our Fuel Delivery Services</h1>
+      <p>Fast, reliable, and efficient fuel delivery service at your doorstep.</p>
+    </div>
+    <div class="service-cards">
+      <style>
+        #services h1 {
+          color: #ff5733; /* Change to any color you want */
+        }
+        #services p {
+          color: #007bff;
+        }
+      </style>
+      
+      <!-- Service Card 1 -->
+      <div class="service-card">
+        <img src="images/fuel-delivery.jpg" alt="Fuel Delivery">
+        <h2>Fuel Delivery</h2>
+        <p>Get your fuel delivered right to your home or office, whenever you need it. Fast and convenient.</p>
+      </div>
+      <style>
+        .service-card h2 {
+          color: #33ff4b; /* Change this to your preferred color */
+        }
+      </style>
+      
+      
+      <!-- Service Card 2 -->
+      <div class="service-card">
+        <img src="images/emergency-service.jpg" alt="Emergency Service">
+        <h2>Emergency Services</h2>
+        <p>24/7 emergency fuel delivery service for when you're in a bind. We’re always just a call away.</p>
+      </div>
+      <!-- Service Card 3 -->
+      <div class="service-card">
+        <img src="images/special-offers.jpg" alt="Special Offers">
+        <h2>Special Offers</h2>
+        <p>Get discounts and exclusive deals on bulk fuel deliveries. Check our current promotions!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="about-content">
+      <h2>About FuelFast</h2>
+      <p>FuelFast is a leading online fuel delivery service committed to bringing fuel to your doorstep in the most efficient and timely manner.<br> Our team of experts ensures that we deliver fuel safely, meeting all industry standards and regulations.<br>Our team of experts ensures that we deliver fuel safely, meeting all industry standards and regulations.<br> We strive to eliminate the hassle of visiting fuel stations by providing a seamless, on-demand fuel delivery experience.
+
+        At FuelFast, we prioritize safety, convenience, and reliability.<br> Our state-of-the-art tracking system allows customers to monitor their deliveries in real-time, ensuring transparency and peace of mind.<br> Whether you need fuel for your vehicle, fleet, or backup generator, our dedicated team is always ready to serve you.<br> With a commitment to innovation and customer satisfaction, FuelFast is revolutionizing the way fuel is delivered, making refueling easier and more accessible than ever before.</p>
+    </div>
+  </section>
+  <style>
+    #about h2 {
+      color: #ff5733; /* Change to your preferred color */
+    }
+  </style>
+  
+
+  <section id="contact">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="contact.php" method="POST">
+        <input type="name" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <style>    #contact h2 {
+    color: #ff5733; /* Change to your preferred color */
+  }
+</style>
+</style>
+
+  <footer>
+    <p>&copy; 2025 FuelFast. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+      <h2>Login</h2>
+      <form action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
